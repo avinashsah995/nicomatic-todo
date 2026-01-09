@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { ListChecks } from 'lucide-react';
 import TaskInput from './components/TaskInput';
 import TaskItem from './components/TaskItem';
