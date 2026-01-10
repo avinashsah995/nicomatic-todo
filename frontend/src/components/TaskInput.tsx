@@ -17,7 +17,7 @@ const TaskInput: React.FC<TaskInputProps> = ({ onAdd }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="flex gap-2 p-2 glass rounded-2xl mb-8">
+        <form onSubmit={handleSubmit} className="flex gap-2 p-2 glass rounded-2xl mb-2">
             <input
                 type="text"
                 value={title}

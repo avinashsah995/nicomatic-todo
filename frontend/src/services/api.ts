@@ -6,7 +6,7 @@ const api = axios.create({
 
 export const getTasks = () => api.get('/tasks');
 export const createTask = (title: string) => api.post('/tasks', { title });
-export const updateTask = (id: number, completed: boolean) => api.patch(`/tasks/${id}`, { completed });
+export const updateTask = (id: number, data: { completed?: boolean; title?: string }) => api.patch(`/tasks/${id}`, data);
 export const deleteTask = (id: number) => api.delete(`/tasks/${id}`);
 
 export default api;
